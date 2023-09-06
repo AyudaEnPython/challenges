@@ -1,218 +1,278 @@
 {
-  "1": {
-    "info": {"number": 1, "rating": 10},
-    "title": "Suma de dos números",
-    "body": "Escribe un programa que tome dos números enteros como entrada y muestre su suma.",
-    "prompt": "Escribe un programa que solicite al usuario dos números enteros separados por un espacio y luego muestre la suma de esos números.",
-    "input": "5\n3",
-    "output": "8",
-    "hints": [
-        "Puedes utilizar la función 'split' para dividir la entrada en dos números separados.",
-        "Luego, convierte esos números en enteros y suma los valores.",
-        "Asegúrate de mostrar el resultado de manera clara y comprensible."
-    ],
-    "test": {
-        "inputs": [
+  "data": [
+    {
+      "type": "problems",
+      "id": "1",
+      "attributes": {
+        "rating": "10",
+        "title": "Suma de dos números",
+        "body": "Escribe un programa que tome dos números enteros como entrada y muestre su suma.",
+        "prompt": "Escribe un programa que solicite al usuario dos números enteros separados por un espacio y luego muestre la suma de esos números.",
+        "input": "5\n3",
+        "output": "8",
+        "hints": [
+          "Puedes utilizar la función 'split' para dividir la entrada en dos números separados.",
+          "Luego, convierte esos números en enteros y suma los valores.",
+          "Asegúrate de mostrar el resultado de manera clara y comprensible."
+        ],
+        "test": {
+          "inputs": [
             "1 2",
             "5 5",
             "6 7"
-        ],
-        "outputs": [
+          ],
+          "outputs": [
             "3",
             "10",
             "13"
-        ]
-    }
-  },
-  "2": {
-      "info": {"number": 2, "rating": 20},
-      "title": "Saludo personalizado",
-      "body": "Escribe un programa que tome el nombre de una persona como entrada y muestre un saludo personalizado.",
-      "prompt": "Escribe un programa que solicite al usuario su nombre y luego muestre un saludo personalizado que incluya su nombre.",
-      "input": "Alice",
-      "output": "Hola, Alice!",
-      "hints": [
+          ]
+        }
+      }
+    },
+    {
+      "type": "problems",
+      "id": "2",
+      "attributes": {
+        "rating": "20",
+        "title": "Saludo personalizado",
+        "body": "Escribe un programa que tome el nombre de una persona como entrada y muestre un saludo personalizado.",
+        "prompt": "Escribe un programa que solicite al usuario su nombre y luego muestre un saludo personalizado que incluya su nombre.",
+        "input": "Alice",
+        "output": "Hola, Alice!",
+        "hints": [
           "Utiliza una declaración 'input' para obtener el nombre del usuario.",
           "Luego, concatena ese nombre en un mensaje de saludo.",
           "Asegúrate de que el saludo incluya una coma y un espacio después del nombre."
-      ],
-      "test": {
+        ],
+        "test": {
           "inputs": [
-              "John",
-              "Jane"
+            "John",
+            "Jane"
           ],
           "outputs": [
-              "Hola, John!",
-              "Hola, Jane!"
+            "Hola, John!",
+            "Hola, Jane!"
           ]
+        }
       }
-  },
-  "3": {
-      "info": {"number": 3, "rating": 40},
-      "title": "La bóveda secreta de Fibonacci",
-      "body": "Había una vez un matemático llamado Juan, que se encontraba explorando una antigua biblioteca llena de libros polvorientos. Mientras hojeaba los libros, descubrió un manuscrito secreto que hablaba de una bóveda oculta en lo profundo de la biblioteca. Este manuscrito afirmaba que la bóveda contenía el secreto de la famosa secuencia de Fibonacci.",
-      "prompt": "Ayuda a Juan a descubrir cuál es el número en la secuencia de Fibonacci. Crea una función llamada 'fibonacci' que tome un número 'n' como argumento y devuelva el 'n-ésimo' número en la secuencia de Fibonacci.",
-      "input": "8",
-      "output": "21",
-      "hints": [
+    },
+    {
+      "type": "problems",
+      "id": "3",
+      "attributes": {
+        "rating": "40",
+        "title": "La bóveda secreta de Fibonacci",
+        "body": "Había una vez un matemático llamado Juan, que se encontraba explorando una antigua biblioteca llena de libros polvorientos. Mientras hojeaba los libros, descubrió un manuscrito secreto que hablaba de una bóveda oculta en lo profundo de la biblioteca. Este manuscrito afirmaba que la bóveda contenía el secreto de la famosa secuencia de Fibonacci.",
+        "prompt": "Ayuda a Juan a descubrir cuál es el número en la secuencia de Fibonacci. Crea una función llamada 'fibonacci' que tome un número 'n' como argumento y devuelva el 'n-ésimo' número en la secuencia de Fibonacci.",
+        "input": "8",
+        "output": "21",
+        "hints": [
           "Puedes resolver este problema utilizando recursión o un bucle.",
           "Intenta escribir una función llamada 'fibonacci' que tome un número 'n' como argumento y devuelva el 'n-ésimo' número en la secuencia de Fibonacci.",
           "La secuencia de Fibonacci comienza con 0 y 1, y luego cada número subsiguiente es la suma de los dos anteriores."
-      ],
-      "test": {
+        ],
+        "test": {
           "inputs": [
-              "6",
-              "7",
-              "8"
+            "6",
+            "7",
+            "8"
           ],
           "outputs": [
-              "8",
-              "13",
-              "21"
+            "8",
+            "13",
+            "21"
           ]
+        }
       }
-  },
-  "4": {
-    "info": {"number": 4, "rating": 30},
-    "title": "Calculadora Simple",
-    "body": "Crea un programa que actúe como una calculadora simple. Debe tomar dos números y una operación (suma, resta, multiplicación o división) como entrada y mostrar el resultado.",
-    "prompt": "Escribe un programa que tome dos números y una operación (+, -, *, /) como entrada y devuelva el resultado de la operación.",
-    "input": "5 + 3",
-    "output": "El resultado es: 8",
-    "hints": ["Puedes utilizar una declaración `if` para determinar la operación a realizar.", "Recuerda manejar los casos de división por cero."],
-    "test": {
-      "inputs": [
-        "10 - 4",
-        "7 * 2",
-        "15 / 3"
-      ],
-      "outputs": [
-        "El resultado es: 6",
-        "El resultado es: 14",
-        "El resultado es: 5"
-      ]
-    }
-  },
-  "5": {
-    "info": {"number": 5, "rating": 40},
-    "title": "Contador de Palabras",
-    "body": "Escribe un programa que cuente cuántas palabras hay en una oración dada. Las palabras están separadas por espacios.",
-    "prompt": "Crea un programa que tome una oración como entrada y cuente cuántas palabras contiene. Las palabras están separadas por espacios.",
-    "input": "Esta es una oración de ejemplo",
-    "output": "6",
-    "hints": ["Puedes utilizar la función `split` para dividir la oración en palabras.", "Recuerda que las palabras están separadas por espacios."],
-    "test": {
-      "inputs": [
-        "Hola",
-        "Cuenta estas palabras"
-      ],
-      "outputs": [
-        "1",
-        "3"
-      ]
-    }
-  },
-  "6": {
-    "info": {"number": 6, "rating": 60},
-    "title": "Conversión de Temperatura",
-    "body": "Escribe un programa que convierta una temperatura dada en grados Celsius a grados Fahrenheit.",
-    "prompt": "Crea un programa que tome una temperatura en grados Celsius como entrada y la convierta a grados Fahrenheit utilizando la fórmula: Fahrenheit = (Celsius * 9/5) + 32.",
-    "input": "25",
-    "output": "77",
-    "hints": ["Utiliza la fórmula proporcionada para realizar la conversión.", "Asegúrate de mostrar el resultado de manera clara y comprensible."],
-    "test": {
-      "inputs": [
-        "0",
-        "100"
-      ],
-      "outputs": [
-        "32",
-        "212"
-      ]
-    }
-  },
-  "7": {
-    "info": {"number": 7, "rating": 75},
-    "title": "Números Primos",
-    "body": "Escribe un programa que verifique si un número dado es primo o no. Un número primo es aquel que solo es divisible por sí mismo y 1.",
-    "prompt": "Crea un programa que tome un número como entrada y determine si es un número primo o no. Si es primo, muestra 'Es un número primo', de lo contrario, muestra 'No es un número primo'.",
-    "input": "7",
-    "output": "Es primo",
-    "hints": ["Puedes utilizar un bucle para verificar si el número es divisible por algún otro número.", "Recuerda que los números primos solo son divisibles por sí mismos y 1."],
-    "test": {
-      "inputs": [
-        "4",
-        "11",
-        "1"
-      ],
-      "outputs": [
-        "No es primo",
-        "Es primo",
-        "No es primo"
-      ]
-    }
-  },
-  "8": {
-    "info": {"number": 8, "rating": 50},
-    "title": "Factorial de un Número",
-    "body": "Escribe un programa que calcule el factorial de un número entero dado.",
-    "prompt": "Crea un programa que solicite al usuario un número entero positivo y luego calcule y muestre su factorial.",
-    "input": "5",
-    "output": "120",
-    "hints": ["El factorial de un número es el producto de todos los enteros positivos desde 1 hasta ese número.", "Puedes utilizar un bucle para calcular el factorial."],
-    "test": {
-      "inputs": [
-        "3",
-        "6",
-        "10"
-      ],
-      "outputs": [
-        "6",
-        "720",
-        "3628800"
-      ]
-    }
-  },
-  "9": {
-    "info": {"number": 9, "rating": 60},
-    "title": "Suma de Dígitos",
-    "body": "Escribe un programa que tome un número entero como entrada y muestre la suma de sus dígitos.",
-    "prompt": "Crea un programa que lea un número entero desde la entrada estándar y calcule la suma de sus dígitos. Luego, muestra la suma calculada.",
-    "input": "12345",
-    "output": "La suma de los dígitos es: 15",
-    "test": {
-      "inputs": ["987654", "123", "9"],
-      "outputs": ["La suma de los dígitos es: 39", "La suma de los dígitos es: 6", "La suma de los dígitos es: 9"]
     },
-    "hints": [
-      "Puedes utilizar una estructura repetitiva (bucle) para iterar sobre los dígitos del número.",
-      "Para obtener el último dígito de un número 'n', puedes usar 'n % 10'.",
-      "Para eliminar el último dígito de un número 'n', puedes usar 'n // 10'."
-    ]
-  },
-  "10": {
-    "info": {"number": 10, "rating": 80},
-    "title": "Cifrado César",
-    "body": "Escribe un programa que realice el cifrado César en un texto dado.",
-    "prompt": "Crea un programa que permita al usuario ingresar un texto y un número 'n', y luego cifre el texto usando el cifrado César con un desplazamiento de 'n'.",
-    "input": "Hola mundo",
-    "output": "Rqsh sptkr",
-    "hints": ["El cifrado César consiste en desplazar cada letra del texto original 'n' posiciones en el alfabeto.", "Asegúrate de manejar mayúsculas y minúsculas por separado."],
-    "test": {
-      "inputs": [
-        "abc 1",
-        "texto 5",
-        "zzz 3",
-        "cifrado 2",
-        "a 4"
-      ],
-      "outputs": [
-        "bcd",
-        "yjcyt",
-        "ccc",
-        "ekhtcfq",
-        "e"
-      ]
+    {
+      "type": "problems",
+      "id": "4",
+      "attributes": {
+        "rating": "30",
+        "title": "Calculadora Simple",
+        "body": "Crea un programa que actúe como una calculadora simple. Debe tomar dos números y una operación (suma, resta, multiplicación o división) como entrada y mostrar el resultado.",
+        "prompt": "Escribe un programa que tome dos números y una operación (+, -, *, /) como entrada y devuelva el resultado de la operación.",
+        "input": "5 + 3",
+        "output": "El resultado es: 8",
+        "hints": [
+          "Puedes utilizar una declaración `if` para determinar la operación a realizar.",
+          "Recuerda manejar los casos de división por cero."
+        ],
+        "test": {
+          "inputs": [
+            "10 - 4",
+            "7 * 2",
+            "15 / 3"
+          ],
+          "outputs": [
+            "El resultado es: 6",
+            "El resultado es: 14",
+            "El resultado es: 5"
+          ]
+        }
+      }
+    },
+    {
+      "type": "problems",
+      "id": "5",
+      "attributes": {
+        "rating": "40",
+        "title": "Contador de Palabras",
+        "body": "Escribe un programa que cuente cuántas palabras hay en una oración dada. Las palabras están separadas por espacios.",
+        "prompt": "Crea un programa que tome una oración como entrada y cuente cuántas palabras contiene. Las palabras están separadas por espacios.",
+        "input": "Esta es una oración de ejemplo",
+        "output": "6",
+        "hints": [
+          "Puedes utilizar la función `split` para dividir la oración en palabras.",
+          "Recuerda que las palabras están separadas por espacios."
+        ],
+        "test": {
+          "inputs": [
+            "Hola",
+            "Cuenta estas palabras"
+          ],
+          "outputs": [
+            "1",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "type": "problems",
+      "id": "6",
+      "attributes": {
+        "rating": "60",
+        "title": "Conversión de Temperatura",
+        "body": "Escribe un programa que convierta una temperatura dada en grados Celsius a grados Fahrenheit.",
+        "prompt": "Crea un programa que tome una temperatura en grados Celsius como entrada y la convierta a grados Fahrenheit utilizando la fórmula: Fahrenheit = (Celsius * 9/5) + 32.",
+        "input": "25",
+        "output": "77",
+        "hints": [
+          "Utiliza la fórmula proporcionada para realizar la conversión.",
+          "Asegúrate de mostrar el resultado de manera clara y comprensible."
+        ],
+        "test": {
+          "inputs": [
+            "0",
+            "100"
+          ],
+          "outputs": [
+            "32",
+            "212"
+          ]
+        }
+      }
+    },
+    {
+      "type": "problems",
+      "id": "7",
+      "attributes": {
+        "rating": "75",
+        "title": "Números Primos",
+        "body": "Escribe un programa que verifique si un número dado es primo o no. Un número primo es aquel que solo es divisible por sí mismo y 1.",
+        "prompt": "Crea un programa que tome un número como entrada y determine si es un número primo o no. Si es primo, muestra 'Es un número primo', de lo contrario, muestra 'No es un número primo'.",
+        "input": "7",
+        "output": "Es primo",
+        "hints": [
+          "Puedes utilizar un bucle para verificar si el número es divisible por algún otro número.",
+          "Recuerda que los números primos solo son divisibles por sí mismos y 1."
+        ],
+        "test": {
+          "inputs": [
+            "4",
+            "11",
+            "1"
+          ],
+          "outputs": [
+            "No es primo",
+            "Es primo",
+            "No es primo"
+          ]
+        }
+      }
+    },
+    {
+      "type": "problems",
+      "id": "8",
+      "attributes": {
+        "rating": "50",
+        "title": "Factorial de un Número",
+        "body": "Escribe un programa que calcule el factorial de un número entero dado.",
+        "prompt": "Crea un programa que solicite al usuario un número entero positivo y luego calcule y muestre su factorial.",
+        "input": "5",
+        "output": "120",
+        "hints": [
+          "El factorial de un número es el producto de todos los enteros positivos desde 1 hasta ese número.",
+          "Puedes utilizar un bucle para calcular el factorial."
+        ],
+        "test": {
+          "inputs": [
+            "3",
+            "6",
+            "10"
+          ],
+          "outputs": [
+            "6",
+            "720",
+            "3628800"
+          ]
+        }
+      }
+    },
+    {
+      "type": "problems",
+      "id": "9",
+      "attributes": {
+        "rating": "60",
+        "title": "Suma de Dígitos",
+        "body": "Escribe un programa que tome un número entero como entrada y muestre la suma de sus dígitos.",
+        "prompt": "Crea un programa que lea un número entero desde la entrada estándar y calcule la suma de sus dígitos. Luego, muestra la suma calculada.",
+        "input": "12345",
+        "output": "La suma de los dígitos es: 15",
+        "test": {
+          "inputs": ["987654", "123", "9"],
+          "outputs": ["La suma de los dígitos es: 39", "La suma de los dígitos es: 6", "La suma de los dígitos es: 9"]
+        },
+        "hints": [
+          "Puedes utilizar una estructura repetitiva (bucle) para iterar sobre los dígitos del número.",
+          "Para obtener el último dígito de un número 'n', puedes usar 'n % 10'.",
+          "Para eliminar el último dígito de un número 'n', puedes usar 'n // 10'."
+        ]
+      }
+    },
+    {
+      "type": "problems",
+      "id": "10",
+      "attributes": {
+        "rating": "80",
+        "title": "Cifrado César",
+        "body": "Escribe un programa que realice el cifrado César en un texto dado.",
+        "prompt": "Crea un programa que permita al usuario ingresar un texto y un número 'n', y luego cifre el texto usando el cifrado César con un desplazamiento de 'n'.",
+        "input": "Hola mundo",
+        "output": "Rqsh sptkr",
+        "hints": [
+          "El cifrado César consiste en desplazar cada letra del texto original 'n' posiciones en el alfabeto.",
+          "Asegúrate de manejar mayúsculas y minúsculas por separado."
+        ],
+        "test": {
+          "inputs": [
+            "abc 1",
+            "texto 5",
+            "zzz 3",
+            "cifrado 2",
+            "a 4"
+          ],
+          "outputs": [
+            "bcd",
+            "yjcyt",
+            "ccc",
+            "ekhtcfq",
+            "e"
+          ]
+        }
+      }
     }
-  }
+  ]
 }
